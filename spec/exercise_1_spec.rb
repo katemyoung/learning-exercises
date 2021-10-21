@@ -7,3 +7,10 @@ describe nothing do # this is a describe block
     expect(nothing).to eq nil 
   end
 end
+
+# exercise taken from https://hackmd.io/NGdU2pqzSbOng3IwsDTzew
+describe track_motivation() do
+  it 'gives us a nice message' do
+  expect(track_motivation(5)).to eq "Motivation stored!"
+  end
+end
