@@ -1,16 +1,37 @@
 require 'exercise_1.rb' # this tells RSpec where to look for the code to test
 
 
-describe nothing do # this is a describe block 
-  # this is a unit test, we call an it block here in RSpec
-  it 'returns nil' do 
-    expect(nothing).to eq nil 
+
+describe Learner do
+
+  describe study do # These are each nested example groups within dsescribe Learner
   end
+
+  context revise do # You can use the context method too
+    
+    it do # this is an example block
+    end 
+
+    specify do  # or you can us ehe sepcify method
+    end
+
+    it {
+    # you can use curly braces for the block, instead of do end keywords
+    }
+
+    it { # your unit test can fit on one line }
+ 
+  end  
+ 
+  describe '#set_goal' do
+  end
+
+  context 'when reflecting' do
+  end
+
 end
 
-# exercise taken from https://hackmd.io/NGdU2pqzSbOng3IwsDTzew
-describe track_motivation() do
-  it 'gives us a nice message' do
-  expect(track_motivation(5)).to eq "Motivation stored!"
-  end
-end
+# Be clear about what method you are describing. For instance,
+#  use the Ruby documentation convention of . (or ::)
+#  when referring to a class method's name and # when 
+#  referring to an instance method's name.
