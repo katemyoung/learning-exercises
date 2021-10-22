@@ -35,3 +35,7 @@ end
 #  use the Ruby documentation convention of . (or ::)
 #  when referring to a class method's name and # when 
 #  referring to an instance method's name.
+
+# Unit test (examplke) syntax in RSpec
+
+# Question: when to use () and when to use {} with an example unit test.
